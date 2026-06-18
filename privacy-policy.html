@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité – Sporedex</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f9f9f6;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #2d5a27;
+    }
+    header p {
+      font-size: 14px;
+      color: #777;
+      margin-top: 8px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2d5a27;
+      margin-top: 40px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e0edd9;
+    }
+    p, li {
+      font-size: 15px;
+      color: #333;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    ul li { margin-bottom: 6px; }
+    .highlight {
+      background: #f0f7ee;
+      border-left: 4px solid #4caf50;
+      padding: 14px 16px;
+      border-radius: 6px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .contact-block {
+      background: #fff;
+      border: 1px solid #d8e8d4;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 16px;
+    }
+    .contact-block p { margin-bottom: 4px; }
+    a { color: #2d5a27; }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+      margin-top: 64px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🍄 Politique de confidentialité</h1>
+    <p>Sporedex – Dernière mise à jour : 18 juin 2026</p>
+  </header>
+
+  <div class="highlight">
+    Sporedex est une application mobile d'identification et de collecte de champignons. Nous nous engageons à protéger vos données personnelles et à respecter votre vie privée, conformément au Règlement Général sur la Protection des Données (RGPD).
+  </div>
+
+  <!-- 1 -->
+  <h2>1. Responsable du traitement</h2>
+  <p>
+    L'application Sporedex est développée et exploitée par :<br />
+    <strong>Clément Buonvino</strong><br />
+    Contact : <a href="mailto:buonvino.clement@gmail.com">buonvino.clement@gmail.com</a>
+  </p>
+
+  <!-- 2 -->
+  <h2>2. Données collectées</h2>
+  <p>Nous collectons uniquement les données nécessaires au fonctionnement de l'application :</p>
+
+  <h2 style="font-size:15px; border-bottom:none; margin-top:20px; color:#333;">a) Données d'identité</h2>
+  <ul>
+    <li><strong>Adresse e-mail</strong> : utilisée pour créer et sécuriser votre compte (authentification via Supabase).</li>
+    <li><strong>Nom d'utilisateur</strong> : pseudonyme public facultatif.</li>
+    <li><strong>Photo de profil (avatar)</strong> : image optionnelle stockée dans notre service de stockage cloud.</li>
+  </ul>
+
+  <h2 style="font-size:15px; border-bottom:none; margin-top:20px; color:#333;">b) Données de géolocalisation</h2>
+  <ul>
+    <li><strong>Coordonnées GPS</strong> : collectées lorsque vous enregistrez un spot de collecte (latitude, longitude). Cette étape est entièrement facultative.</li>
+    <li><strong>Région</strong> : région géographique choisie par l'utilisateur pour personnaliser l'expérience (non collectée automatiquement).</li>
+    <li>Les spots marqués comme partagés (<em>is_shared = true</em>) sont visibles des autres utilisateurs sur la carte communautaire, <strong>uniquement si vous activez explicitement le partage</strong>.</li>
+  </ul>
+
+  <h2 style="font-size:15px; border-bottom:none; margin-top:20px; color:#333;">c) Photos</h2>
+  <ul>
+    <li>Les photos de champignons que vous prenez ou importez depuis votre galerie sont <strong>transmises à iNaturalist</strong> pour l'identification de l'espèce, puis stockées dans notre service cloud si vous enregistrez la découverte.</li>
+    <li>Les photos ne sont jamais utilisées à des fins publicitaires ou revendues à des tiers.</li>
+  </ul>
+
+  <h2 style="font-size:15px; border-bottom:none; margin-top:20px; color:#333;">d) Données d'utilisation</h2>
+  <ul>
+    <li>Points d'expérience (XP), niveau, streak quotidien, succès débloqués.</li>
+    <li>Résultats de quiz, espèces consultées, espèces favorites.</li>
+    <li>Événements d'utilisation anonymes (ouverture de l'app, identification lancée, quiz terminé) à des fins d'amélioration de l'application.</li>
+    <li>Plateforme (iOS/Android), version de l'application.</li>
+  </ul>
+
+  <h2 style="font-size:15px; border-bottom:none; margin-top:20px; color:#333;">e) Données d'abonnement</h2>
+  <ul>
+    <li>Statut de l'abonnement premium (actif / inactif), géré via <strong>RevenueCat</strong>. Nous ne stockons pas vos informations de paiement.</li>
+  </ul>
+
+  <!-- 3 -->
+  <h2>3. Finalités du traitement</h2>
+  <ul>
+    <li>Créer et gérer votre compte utilisateur.</li>
+    <li>Identifier les espèces de champignons via l'API iNaturalist.</li>
+    <li>Afficher la météo locale favorable à la cueillette (via Open-Meteo).</li>
+    <li>Gérer votre collection personnelle de découvertes.</li>
+    <li>Afficher les spots partagés sur la carte communautaire (avec votre consentement).</li>
+    <li>Envoyer des notifications push (si vous les avez autorisées).</li>
+    <li>Gérer votre abonnement premium.</li>
+    <li>Améliorer l'application via des statistiques d'usage anonymes.</li>
+  </ul>
+
+  <!-- 4 -->
+  <h2>4. Services tiers</h2>
+  <p>Sporedex utilise les services suivants qui peuvent recevoir certaines de vos données :</p>
+  <ul>
+    <li>
+      <strong>Supabase</strong> (base de données et stockage) – hébergement de vos données en sécurité.
+      <a href="https://supabase.com/privacy" target="_blank">Politique de confidentialité Supabase</a>
+    </li>
+    <li>
+      <strong>iNaturalist</strong> – vos photos et coordonnées GPS sont envoyées pour identifier les espèces. Aucune donnée d'identité n'est transmise.
+      <a href="https://www.inaturalist.org/pages/privacy" target="_blank">Politique de confidentialité iNaturalist</a>
+    </li>
+    <li>
+      <strong>Open-Meteo</strong> – vos coordonnées de région sont envoyées pour obtenir les prévisions météo. Aucune donnée personnelle n'est stockée par Open-Meteo.
+      <a href="https://open-meteo.com/en/terms" target="_blank">Conditions Open-Meteo</a>
+    </li>
+    <li>
+      <strong>RevenueCat</strong> – gestion des abonnements in-app.
+      <a href="https://www.revenuecat.com/privacy" target="_blank">Politique de confidentialité RevenueCat</a>
+    </li>
+  </ul>
+
+  <!-- 5 -->
+  <h2>5. Permissions de l'appareil</h2>
+  <ul>
+    <li><strong>Caméra</strong> : pour photographier des champignons en vue de les identifier ou de les ajouter à votre collection.</li>
+    <li><strong>Galerie photos</strong> : pour importer une photo existante à identifier.</li>
+    <li><strong>Localisation (premier plan uniquement)</strong> : pour enregistrer l'emplacement d'un spot de collecte et afficher la carte.</li>
+    <li><strong>Notifications</strong> : pour vous alerter des conditions météo favorables à la cueillette et de vos espèces surveillées.</li>
+  </ul>
+  <p>Toutes ces permissions sont <strong>optionnelles</strong> et peuvent être refusées ou révoquées à tout moment dans les paramètres de votre appareil.</p>
+
+  <!-- 6 -->
+  <h2>6. Conservation des données</h2>
+  <p>Vos données sont conservées tant que votre compte est actif. À la suppression de votre compte, l'ensemble de vos données personnelles (profil, collection, photos, spots) sont supprimées dans un délai de 30 jours.</p>
+
+  <!-- 7 -->
+  <h2>7. Vos droits (RGPD)</h2>
+  <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+  <ul>
+    <li><strong>Droit d'accès</strong> : obtenir une copie de vos données personnelles.</li>
+    <li><strong>Droit de rectification</strong> : corriger des données inexactes (nom d'utilisateur, etc.).</li>
+    <li><strong>Droit à l'effacement</strong> : supprimer votre compte et toutes vos données directement depuis l'application (menu Profil → Supprimer mon compte) ou par e-mail.</li>
+    <li><strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré.</li>
+    <li><strong>Droit d'opposition</strong> : vous opposer au traitement de vos données à des fins d'amélioration de l'application.</li>
+  </ul>
+  <p>Pour exercer ces droits, contactez-nous à l'adresse ci-dessous.</p>
+
+  <!-- 8 -->
+  <h2>8. Sécurité</h2>
+  <p>Vos données sont protégées par :</p>
+  <ul>
+    <li>Chiffrement des communications (HTTPS/TLS).</li>
+    <li>Politiques de sécurité au niveau des lignes (Row Level Security) sur la base de données : chaque utilisateur n'accède qu'à ses propres données.</li>
+    <li>Authentification sécurisée via Supabase Auth.</li>
+  </ul>
+
+  <!-- 9 -->
+  <h2>9. Données des mineurs</h2>
+  <p>Sporedex n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données personnelles de mineurs. Si vous pensez qu'un mineur a créé un compte, contactez-nous pour le supprimer.</p>
+
+  <!-- 10 -->
+  <h2>10. Modifications de cette politique</h2>
+  <p>Nous pouvons mettre à jour cette politique de temps à autre. En cas de modification significative, vous en serez informé via une notification dans l'application. La date de mise à jour est indiquée en haut de cette page.</p>
+
+  <!-- 11 -->
+  <h2>11. Contact</h2>
+  <div class="contact-block">
+    <p><strong>Clément Buonvino</strong></p>
+    <p>Développeur de Sporedex</p>
+    <p>E-mail : <a href="mailto:buonvino.clement@gmail.com">buonvino.clement@gmail.com</a></p>
+    <p style="margin-top:8px; font-size:13px; color:#888;">
+      Pour toute demande relative à vos données personnelles (accès, suppression, opposition), merci d'indiquer "Données personnelles – Sporedex" en objet de votre message.
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2026 Sporedex – Tous droits réservés</p>
+    <p style="margin-top:4px;">Application disponible sur Google Play</p>
+  </footer>
+
+</div>
+</body>
+</html>
